@@ -1,0 +1,24 @@
+schema: 1
+id: session-token-format
+title: Session token compatibility
+intent: Issuance, verification, schema, and documentation agree on token claims.
+scope: authentication
+tags: [authentication, example]
+members:
+  - anchor: auth.issue-token
+    role: producer
+  - anchor: auth.verify-token
+    role: consumer
+  - anchor: schema.session-token
+    role: schema
+  - anchor: docs.session-token
+    role: documentation
+    required: false
+relations:
+  - from: auth.issue-token
+    to: auth.verify-token
+    kind: mirrors
+    bidirectional: true
+  - from: auth.issue-token
+    to: schema.session-token
+    kind: serializes-as

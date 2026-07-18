@@ -1,0 +1,55 @@
+# Rust build and package output
+/target/
+**/target/
+*.crate
+*.rs.bk
+*.dSYM/
+
+# Strandmap generated state
+/.strandmap/.lock
+/.strandmap/cache/
+/.strandmap/reviews/
+**/.strandmap/.lock
+**/.strandmap/cache/
+**/.strandmap/reviews/
+
+# Coverage and profiling
+/coverage/
+**/coverage/
+lcov.info
+tarpaulin-report.html
+*.profraw
+*.profdata
+
+# Release artifacts and local tool output
+/artifacts/
+/dist/
+/result
+/result-*
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+.direnv/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+**/.DS_Store
+Thumbs.db
+Desktop.ini

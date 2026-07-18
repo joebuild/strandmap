@@ -1,0 +1,17 @@
+anchors:
+  - schema: 1
+    id: auth.issue-token
+    target: rust://auth::issue_token
+    kind: code
+  - schema: 1
+    id: auth.verify-token
+    target: rust://auth::verify_token
+    kind: code
+  - schema: 1
+    id: schema.session-token
+    target: file://schema/session-token.json
+    kind: schema
+  - schema: 1
+    id: docs.session-token
+    target: file://docs/authentication.md#L1-L12
+    kind: documentation

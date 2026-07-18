@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": ["subject", "expires"],
+  "properties": {
+    "subject": { "type": "string" },
+    "expires": { "type": "integer" }
+  }
+}
